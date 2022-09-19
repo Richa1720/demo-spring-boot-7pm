@@ -1,4 +1,7 @@
+// For understanding the working of END points
+
 package com.example.demospringboot7pm.controller;
+
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +19,7 @@ public class DemoController {
     }
 
     @RequestMapping("/Welcome")
-    public void welcome()                 //  without return for console o/p
+    public void welcome()                 //  without return, for console o/p
     {
         System.out.println("Welcome to Spring Boot .........");
     }

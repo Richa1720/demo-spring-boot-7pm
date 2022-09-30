@@ -1,3 +1,4 @@
+//WEB SIMPLE CALCULATOR THROUGH @RequestMapping
 package com.example.demospringboot7pm.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;

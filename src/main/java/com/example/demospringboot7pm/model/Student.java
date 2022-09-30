@@ -1,11 +1,23 @@
 package com.example.demospringboot7pm.model;
 
-public class Student {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity(name="test_student_table")  //here we are changing Table_Name
+public class Student {
+    @Id
+    @GeneratedValue   // with this notation database automatically increment the ID +1,2,3,4..... ;
+    long ID;  // primary key of table
     String name;
     int age;
+    @Column(name="stream")  // with this notation we can change/rename column_name(section)
     String section;
 
+    // create default constructor
+    public Student() {
+    }
     //parameterized constructor
 
 

@@ -1,3 +1,5 @@
+// WAP to understand the working of endpoints nd get studentarraylist by passing data into student obj as well as getfirststudent
+
 package com.example.demospringboot7pm.controller;
 
 import com.example.demospringboot7pm.model.Student;

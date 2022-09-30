@@ -1,3 +1,5 @@
+//DoctorArrayList and get first doctor from the list using doclist.get(0)  index
+
 package com.example.demospringboot7pm.controller;
 
 import com.example.demospringboot7pm.model.Doctor;

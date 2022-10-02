@@ -1,4 +1,4 @@
-// Sending input parameter with using @PathVariable
+// Sending input parameter with using @PathVariable ....
 
 package com.example.demospringboot7pm.controller;
 

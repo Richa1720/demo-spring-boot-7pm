@@ -1,6 +1,7 @@
 package com.example.demospringboot7pm.controller;
 
 import com.example.demospringboot7pm.model.Employee;
+import com.example.demospringboot7pm.model.Student;
 import com.example.demospringboot7pm.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,6 +42,13 @@ public class EmployeeDBController {
     public String deleteEmployeeDB(@RequestParam long id)
     {
         return service.deleteEmp(id);
+    }
+
+    //dev created method
+    @GetMapping("/findbyname_employee")
+    public Employee student(@RequestParam String name)
+    {
+        return service.findByName(name);
     }
 
 

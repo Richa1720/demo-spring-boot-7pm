@@ -1,6 +1,7 @@
 package com.example.demospringboot7pm.service;
 
 import com.example.demospringboot7pm.model.Employee;
+import com.example.demospringboot7pm.model.Student;
 import com.example.demospringboot7pm.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,12 +41,19 @@ public class EmployeeService {
         return "Successfully updated name as "+name;
     }
 
-    //U UPDATE /PUT
+    //D FOR DELETE
 
     public String deleteEmp(long id)
     {
         repository.deleteById(id);
 
         return "Successfully deleted employee from the database";
+    }
+
+    //dev method
+
+    public Employee findByName(String name)
+    {
+        return repository.findByName(name);
     }
 }
